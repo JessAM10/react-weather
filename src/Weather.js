@@ -30,11 +30,11 @@ export default function Weather() {
                 <span>20</span>
               </span>
               <span className="units">
-                <a href="#" className="celsius-unit active">
+                <a href="/" className="celsius-unit active">
                   °C
                 </a>
                 |
-                <a href="#" className="fahrenheit-unit">
+                <a href="/" className="fahrenheit-unit">
                   °F
                 </a>
               </span>
@@ -58,6 +58,7 @@ export default function Weather() {
               className="github-link"
               href="https://github.com/JessAM10/my-weather-app"
               target="_blank"
+              rel="noreferrer"
             >
               Open-source code
             </a>
@@ -65,6 +66,7 @@ export default function Weather() {
             <a
               href="https://linkedin.com/in/jessallardm"
               target="_blank"
+              rel="noreferrer"
               className="linkedin"
             >
               Jessica Allard

@@ -14,7 +14,7 @@ export default function Search() {
                 type="text"
                 className="input"
                 placeholder="Find your destination"
-                autocomplete="off"
+                autoComplete="off"
               />
               <button type="submit">Search</button>
             </div>
