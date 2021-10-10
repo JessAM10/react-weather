@@ -1,0 +1,46 @@
+/* .other-destinations {
+  text-align: center;
+  font-size: 20px;
+  width: 300px;
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  left: 800px;
+  bottom: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background: transparent;
+}
+
+.other-destinations-list {
+  text-align: center;
+  padding: 20px 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.other-destinations-list a {
+  color: black;
+  text-decoration: none;
+}
+
+.other-destinations-list:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.destination-title {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.plane-image {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.current-location-button {
+  display: inline;
+} */

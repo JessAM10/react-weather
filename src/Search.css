@@ -1,0 +1,14 @@
+.search-bar {
+  font-family: "arial", sans-serif;
+  position: relative;
+  left: 800px;
+  bottom: 200px;
+}
+
+.input {
+  width: 235px;
+}
+
+input:placeholder-shown {
+  font-style: italic;
+}
