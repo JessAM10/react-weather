@@ -22,8 +22,11 @@
   border: none;
   border-radius: 5px;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .Weather .button {
   background: rgb(209, 44, 113);
+  border: none;
+  margin-bottom: 10px;
 }
