@@ -1,8 +1,14 @@
 .Weather .container {
   max-width: 600px;
   margin-top: 50px;
-  border: 1px solid black;
+  border-radius: 5px;
   padding: 20px;
+  background: linear-gradient(to top right, #ff9696, #8c6bae);
+  color: white;
+}
+
+.Weather ul {
+  padding: 0;
 }
 
 .Weather li {
@@ -10,6 +16,14 @@
 }
 
 .Weather .search {
-  width: 250px;
-  height: 32px;
+  width: 275px;
+  height: 35px;
+  background: #f9f7fe;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Weather .button {
+  background: rgb(209, 44, 113);
 }

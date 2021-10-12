@@ -1,17 +1,37 @@
+import axios from "axios";
 import React from "react";
 import "./Weather.css";
 
 export default function Weather() {
+  const apiKey = "0ced109d1b3107e21ab8ab47c9cb6bab";
+  let units = "metric";
+  let city = "Montreal";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+
+  function showWeather(response) {
+    console.log(response.data);
+  }
+
+  axios.get(apiUrl).then(showWeather);
+
   return (
     <div className="Weather">
       <div className="container">
         <form>
           <div className="row">
             <div className="col-6">
-              <input className="search" type="search" placeholder="Search for a city" />
+              <input
+                className="search"
+                type="search"
+                placeholder="Search for a city"
+              />
             </div>
             <div className="col-6">
-              <input className="btn btn-primary" type="submit" value="Search" />
+              <input
+                className="btn btn-primary button"
+                type="submit"
+                value="Search"
+              />
             </div>
           </div>
         </form>
