@@ -1,13 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
-import FormattedDate from "./FormattedDate";
+import WeatherInfo from "./WeatherInfo";
 import "./Weather.css";
 
 export default function Weather() {
   const [weather, setWeather] = useState({ ready: false });
 
   function showWeather(response) {
-    console.log(response.data);
     setWeather({
       ready: true,
       cityName: response.data.name,
@@ -30,7 +29,7 @@ export default function Weather() {
                 <input
                   className="search"
                   type="search"
-                  placeholder="Search for a city"
+                  placeholder="Enter a city"
                 />
               </div>
               <div className="col-6">
@@ -42,27 +41,9 @@ export default function Weather() {
               </div>
             </div>
           </form>
-          <h1>{weather.cityName}</h1>
-          <ul>
-            <li>
-              <FormattedDate date={weather.date} />
-            </li>
-            <li className="text-capitalize">{weather.description}</li>
-          </ul>
-          <div className="row">
-            <div className="col">
-              <img src={weather.iconUrl} alt="weather icon" />
-              {Math.round(weather.temperature)}°C
-            </div>
-            <div className="col">
-              <ul>
-                <li>Humidity: {weather.humidity}%</li>
-                <li>Wind: {Math.round(weather.wind * 3.6)} km/h</li>
-              </ul>
-            </div>
-          </div>
+          <WeatherInfo data={weather}/>
         </div>
-      </div>
+        </div>
     );
   } else {
     const apiKey = "0ced109d1b3107e21ab8ab47c9cb6bab";
