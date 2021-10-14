@@ -15,10 +15,6 @@
   list-style: none;
 }
 
-.Weather a {
-  text-decoration: none;
-  color: rgb(209, 44, 113);
-}
 
 .Weather .search {
   width: 275px;
