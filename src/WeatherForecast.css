@@ -1,3 +1,7 @@
 .WeatherForecast .container {
   background: transparent;
 }
+
+.WeatherForecast {
+  text-align: center;
+}
