@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
@@ -7,6 +7,10 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.city);
+
+  useEffect(() => {
+
+  }, [input]);
 
   function showWeather(response) {
     setWeather({
@@ -18,7 +22,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
-
+     coordinates: response.data.coord
     });
   }
 
@@ -41,7 +45,7 @@ export default function Weather(props) {
   if (weather.ready) {
     return (
       <div className="Weather">
-        <div className="container">
+       
           <form onSubmit={handleSubmit}>
             <div className="row">
               <div className="col-6">
@@ -54,17 +58,14 @@ export default function Weather(props) {
                 />
               </div>
               <div className="col-6">
-                <input
-                  className="btn button"
-                  type="submit"
-                  value="Search"
-                />
+                <input className="btn button" type="submit" value="Search" />
               </div>
             </div>
           </form>
+       
           <WeatherInfo data={weather} />
-          <WeatherForecast />
-        </div>
+          <WeatherForecast coordinates={weather.coordinates}/>
+       
       </div>
     );
   } else {
