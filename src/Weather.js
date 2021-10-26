@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
@@ -8,9 +8,9 @@ export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.city);
 
-  useEffect(() => {
+  // useEffect(() => {
 
-  }, [input]);
+  // }, [input]);
 
   function showWeather(response) {
     setWeather({
