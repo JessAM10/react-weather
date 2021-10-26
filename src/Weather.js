@@ -8,10 +8,6 @@ export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.city);
 
-  // useEffect(() => {
-
-  // }, [input]);
-
   function showWeather(response) {
     setWeather({
       ready: true,
