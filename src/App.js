@@ -8,17 +8,22 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-      <header className="App-header">
-        <Weather city="Montreal" />
-      </header>{" "}
-      <footer>
-        {" "}
-        <a href="https://github.com/JessAM10/react-weather" className="open-source">
+        <header className="App-header">
+          <Weather city="Montreal" />
+        </header>{" "}
+        <footer>
           {" "}
-          Open-source code
-        </a>{" "}
-        by Jessica Allard
-      </footer>
+          <a
+            href="https://github.com/JessAM10/react-weather"
+            target="_blank"
+            rel="noreferrer"
+            className="open-source"
+          >
+            {" "}
+            Open-source code
+          </a>{" "}
+          by Jessica Allard
+        </footer>
       </div>
     </div>
   );
