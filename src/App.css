@@ -6,13 +6,3 @@
   background: linear-gradient(to top right, #ff9696, #8c6bae);
   color: white;
 }
-
-.App footer {
-  margin-top: 40px;
-}
-
-.App .open-source {
-  text-decoration: none;
-  color: #d12c71;
-  font-weight: bold;
-}

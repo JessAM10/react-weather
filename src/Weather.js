@@ -7,7 +7,6 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.city);
-  
 
   function showWeather(response) {
     setWeather({
@@ -19,7 +18,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
-      coordinates: response.data.coord
+      coordinates: response.data.coord,
     });
   }
 
@@ -42,27 +41,25 @@ export default function Weather(props) {
   if (weather.ready) {
     return (
       <div className="Weather">
-       
-          <form onSubmit={handleSubmit}>
-            <div className="row">
-              <div className="col-6">
-                <input
-                  className="search"
-                  type="search"
-                  placeholder="Enter a city"
-                  onChange={updateCity}
-                  autoFocus={true}
-                />
-              </div>
-              <div className="col-6">
-                <input className="btn button" type="submit" value="Search" />
-              </div>
+        <form onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="col-6">
+              <input
+                className="search"
+                type="search"
+                placeholder="Enter a city"
+                onChange={updateCity}
+                autoFocus={true}
+              />
             </div>
-          </form>
-       
-          <WeatherInfo data={weather} />
-          <WeatherForecast coordinates={weather.coordinates}/>
-       
+            <div className="col-6">
+              <input className="btn button" type="submit" value="Search" />
+            </div>
+          </div>
+        </form>
+
+        <WeatherInfo data={weather} />
+        <WeatherForecast coordinates={weather.coordinates} />
       </div>
     );
   } else {

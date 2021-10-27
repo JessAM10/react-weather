@@ -6,7 +6,6 @@
   list-style: none;
 }
 
-
 .Weather .search {
   width: 275px;
   height: 35px;
@@ -26,4 +25,14 @@
 
 .Weather .button:hover {
   color: white;
+}
+
+@media (max-width: 550px) {
+  .Weather .search {
+    width: 220px;
+  }
+  .Weather .button {
+    position: relative;
+    left: 75px;
+  }
 }

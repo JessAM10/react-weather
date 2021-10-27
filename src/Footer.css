@@ -1,0 +1,10 @@
+.Footer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.Footer .open-source {
+  text-decoration: none;
+  color: #d12c71;
+  font-weight: bold;
+}

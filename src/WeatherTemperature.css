@@ -21,3 +21,13 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+@media (max-width: 550px) {
+  .WeatherTemperature .temperature {
+    font-size: 45px;
+  }
+
+  .WeatherTemperature .units {
+    font-size: 15px;
+  }
+}

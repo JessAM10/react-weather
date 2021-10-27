@@ -1,5 +1,6 @@
 import React from "react";
 import Weather from "./Weather";
+import Footer from "./Footer";
 import "./App.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,20 +12,8 @@ export default function App() {
         <header className="App-header">
           <Weather city="Montreal" />
         </header>{" "}
-        <footer>
-          {" "}
-          <a
-            href="https://github.com/JessAM10/react-weather"
-            target="_blank"
-            rel="noreferrer"
-            className="open-source"
-          >
-            {" "}
-            Open-source code
-          </a>{" "}
-          by Jessica Allard
-        </footer>
-      </div>
+      </div>{" "}
+      <Footer />
     </div>
   );
 }
