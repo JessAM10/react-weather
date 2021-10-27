@@ -14,7 +14,8 @@ export default function Footer() {
         {" "}
         Open-source code
       </a>{" "}
-      by Jessica Allard
+      by
+      <a href="www.linkedin.com/in/jessallardm" target="_blank" rel="noreferrer" className="linkedin"> Jessica Allard</a>
     </footer>
   );
 }

@@ -4,8 +4,11 @@
 
 }
 
-.Footer .open-source {
+.Footer .open-source,
+.linkedin {
   text-decoration: none;
   color: #d12c71;
   font-weight: bold;
 }
+
+
