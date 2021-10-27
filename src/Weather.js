@@ -7,6 +7,7 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.city);
+  
 
   function showWeather(response) {
     setWeather({
@@ -18,7 +19,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
-     coordinates: response.data.coord
+      coordinates: response.data.coord
     });
   }
 
