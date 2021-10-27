@@ -7,6 +7,7 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weather, setWeather] = useState({ ready: false });
   const [city, setCity] = useState(props.city);
+  
 
   function showWeather(response) {
     setWeather({
