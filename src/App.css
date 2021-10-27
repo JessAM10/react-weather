@@ -5,4 +5,5 @@
   padding: 40px;
   background: linear-gradient(to top right, #ff9696, #8c6bae);
   color: white;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
