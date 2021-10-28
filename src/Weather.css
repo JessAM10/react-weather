@@ -31,7 +31,7 @@
 
 @media (max-width: 550px) {
   .Weather .search {
-    width: 220px;
+    width: 160px;
   }
   .Weather .button {
     position: relative;
