@@ -22,7 +22,7 @@
   font-weight: bold;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .WeatherTemperature .temperature {
     font-size: 45px;
   }
